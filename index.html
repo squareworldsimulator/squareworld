@@ -77,8 +77,13 @@
       text-decoration: underline;
     }
 
-    /* ✅ Compact mobile layout */
+    /* ✅ Compact, centered mobile layout */
     @media (max-width: 600px) {
+      .image-block {
+        align-items: center;
+        text-align: center;
+      }
+
       .image-block img {
         max-width: 240px;
       }
