@@ -47,14 +47,13 @@
     }
 
     .release {
-      align-self: flex-end;
       margin-top: 60px;
       font-size: clamp(20px, 6vw, 32px);
       font-weight: bold;
       text-align: right;
-      transform: scaleX(1.2);
-      transform-origin: right;
       display: inline-block;
+      transform: scaleX(1.2) translateX(32%);
+      transform-origin: right;
     }
 
     .artist {
@@ -74,6 +73,13 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .image-block {
+        transform: scale(1.15);
+        transform-origin: top center;
+      }
     }
   </style>
 </head>
