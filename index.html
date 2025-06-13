@@ -76,10 +76,29 @@
       text-decoration: underline;
     }
 
+    /* ✅ Mobile-specific font and image scaling (no transform layout bugs) */
     @media (max-width: 600px) {
-      .image-block {
-        transform: scale(2); /* test this first, then change to 1.15 */
-        transform-origin: top center;
+      .image-block img {
+        max-width: 100%;
+      }
+
+      .caption-top,
+      .caption-bottom {
+        font-size: 28px;
+        transform: scaleX(1.1);
+      }
+
+      .release {
+        font-size: 32px;
+        transform: scaleX(1.2) translateX(8%);
+      }
+
+      .artist {
+        font-size: 24px;
+      }
+
+      a {
+        font-size: 24px;
       }
     }
   </style>
