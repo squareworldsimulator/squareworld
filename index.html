@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>n.sq</title>
   <style>
     body {
@@ -76,7 +77,7 @@
       text-decoration: underline;
     }
 
-    /* ✅ Mobile-specific font and image scaling (no transform layout bugs) */
+    /* ✅ Mobile-specific font and image scaling */
     @media (max-width: 600px) {
       .image-block img {
         max-width: 100%;
@@ -85,12 +86,12 @@
       .caption-top,
       .caption-bottom {
         font-size: 28px;
-        transform: scaleX(5);
+        transform: scaleX(1.1);
       }
 
       .release {
         font-size: 32px;
-        transform: scaleX(5) translateX(8%);
+        transform: scaleX(1.2) translateX(8%);
       }
 
       .artist {
