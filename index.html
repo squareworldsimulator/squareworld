@@ -17,7 +17,8 @@
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
-      max-width: 300px;
+      width: 90vw;
+      max-width: 400px;
     }
 
     .image-block img {
@@ -29,7 +30,7 @@
 
     .caption-top,
     .caption-bottom {
-      font-size: 18px;
+      font-size: clamp(16px, 5vw, 28px);
       font-weight: 700;
       transform: scaleX(1.1);
       transform-origin: left;
@@ -48,7 +49,7 @@
     .release {
       align-self: flex-end;
       margin-top: 60px;
-      font-size: 24px;
+      font-size: clamp(20px, 6vw, 32px);
       font-weight: bold;
       text-align: right;
       transform: scaleX(1.2);
@@ -57,7 +58,7 @@
     }
 
     .artist {
-      font-size: 18px;
+      font-size: clamp(16px, 4vw, 24px);
       font-weight: 700;
     }
 
@@ -66,6 +67,7 @@
       margin-top: 20px;
       color: blue;
       text-decoration: none;
+      font-size: clamp(16px, 4vw, 24px);
       font-weight: 700;
       letter-spacing: 0.03em;
     }
